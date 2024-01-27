@@ -69,6 +69,7 @@ fun SofritoCenteredNavigationRail(
     containerColor: Color = androidx.compose.material3.NavigationRailDefaults.ContainerColor,
     contentColor: Color = contentColorFor(containerColor),
     header: @Composable (ColumnScope.() -> Unit)? = null,
+    footer: @Composable (ColumnScope.() -> Unit)? = null,
     windowInsets: WindowInsets = androidx.compose.material3.NavigationRailDefaults.windowInsets,
     content: @Composable ColumnScope.() -> Unit
 ) {
@@ -96,6 +97,10 @@ fun SofritoCenteredNavigationRail(
                 verticalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterVertically)
             ) {
                 content()
+            }
+            if (footer != null) {
+                Spacer(Modifier.height(8.dp))
+                footer()
             }
         }
     }

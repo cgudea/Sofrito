@@ -19,4 +19,9 @@ annotation class ShoppingNavGraph(val start: Boolean = false)
 @NavGraph
 @RootNavGraph
 @Destination
+annotation class CalendarNavGraph(val start: Boolean = false)
+
+@NavGraph
+@RootNavGraph
+@Destination
 annotation class SettingsNavGraph(val start: Boolean = false)

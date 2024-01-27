@@ -1,45 +1,49 @@
 [versions]
-agp = "8.4.0-alpha01"
-kotlin = "1.9.20"
+accompanist = "0.33.2-alpha"
+activityCompose = "1.8.2"
+agp = "8.4.0-alpha06"
+coil = "2.5.0"
+compose-destinations = "1.9.55"
+compose-icons = "1.1.0"
+composeBom = "2024.01.00"
+constraint-layout = "1.0.1"
 coreKtx = "1.12.0"
+espressoCore = "3.5.1"
 junit = "4.13.2"
 junitVersion = "1.1.5"
-espressoCore = "3.5.1"
-lifecycleRuntimeKtx = "2.6.2"
-activityCompose = "1.8.1"
-composeBom = "2023.10.01"
-compose-destinations = "1.9.55"
+kotlin = "1.9.20"
 ksp = "1.9.20-1.0.14"
-accompanist = "0.33.2-alpha"
-moshi = "1.12.0"
-constraint-layout = "1.0.1"
-compose-icons = "1.1.0"
-coil = "2.5.0"
-material-adaptive = "1.0.0-alpha03"
+lifecycleRuntimeKtx = "2.7.0"
+material-adaptive = "1.0.0-alpha05"
+material-adaptive-navigation = "1.0.0-alpha02"
+moshi = "1.14.0"
+orbit-mvi = "6.1.0"
 
 [libraries]
-androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-junit = { group = "junit", name = "junit", version.ref = "junit" }
-androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
-androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
-androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
-androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
-androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
-androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 arch-composedestinations = { group = "io.github.raamcosta.compose-destinations", name = "core", version.ref = "compose-destinations" }
 arch-composedestinations-ksp = { group = "io.github.raamcosta.compose-destinations", name = "ksp", version.ref = "compose-destinations" }
+arch-orbit-compose = { group = "org.orbit-mvi", name = "orbit-compose", version.ref = "orbit-mvi" }
+arch-orbit-core = { group = "org.orbit-mvi", name = "orbit-core", version.ref = "orbit-mvi" }
+arch-orbit-viewmodel = { group = "org.orbit-mvi", name = "orbit-viewmodel", version.ref = "orbit-mvi" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
 networking-moshi = { group = "com.squareup.moshi", name = "moshi", version.ref = "moshi" }
 networking-moshi-codegen = { group = "com.squareup.moshi", name = "moshi-kotlin-codegen", version.ref = "moshi" }
 ui-accompanist-adaptive = { group = "com.google.accompanist", name = "accompanist-adaptive", version.ref = "accompanist" }
 ui-compose-constraintlayout = {group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraint-layout"}
 ui-compose-icons-cssGg = { module = "br.com.devsrsouza.compose.icons:css-gg", version.ref = "compose-icons" }
-ui-compose-icons-weatherIcons = { module = "br.com.devsrsouza.compose.icons:erikflowers-weather-icons", version.ref = "compose-icons" }
 ui-compose-icons-evaIcons = { module = "br.com.devsrsouza.compose.icons:eva-icons", version.ref = "compose-icons" }
 ui-compose-icons-feather = { module = "br.com.devsrsouza.compose.icons:feather", version.ref = "compose-icons" }
 ui-compose-icons-fontAwesome = { module = "br.com.devsrsouza.compose.icons:font-awesome", version.ref = "compose-icons" }
@@ -48,9 +52,11 @@ ui-compose-icons-linea = { module = "br.com.devsrsouza.compose.icons:linea", ver
 ui-compose-icons-octicons = { module = "br.com.devsrsouza.compose.icons:octicons", version.ref = "compose-icons" }
 ui-compose-icons-simpleIcons = { module = "br.com.devsrsouza.compose.icons:simple-icons", version.ref = "compose-icons" }
 ui-compose-icons-tablerIcons = { module = "br.com.devsrsouza.compose.icons:tabler-icons", version.ref = "compose-icons" }
+ui-compose-icons-weatherIcons = { module = "br.com.devsrsouza.compose.icons:erikflowers-weather-icons", version.ref = "compose-icons" }
 ui-compose-imageloading-coil = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+ui-compose-material-adaptive = { module = "androidx.compose.material3:material3-adaptive", version.ref = "material-adaptive"}
+ui-compose-material-adaptive-navigation = { group = "androidx.compose.material3", name = "material3-adaptive-navigation-suite-android", version.ref = "material-adaptive-navigation" }
 ui-compose-materialWindow = { module = "androidx.compose.material3:material3-window-size-class" }
-ui-compose-materialAdaptive = { module = "androidx.compose.material3:material3-adaptive", version.ref = "material-adaptive"}
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

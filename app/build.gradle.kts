@@ -68,7 +68,8 @@ dependencies {
     implementation(libs.ui.compose.icons.fontAwesome)
     implementation(libs.ui.compose.imageloading.coil)
     implementation(libs.ui.compose.materialWindow)
-    implementation(libs.ui.compose.materialAdaptive)
+    implementation(libs.ui.compose.material.adaptive)
+    implementation(libs.ui.compose.material.adaptive.navigation)
 
     // Network and Data
     implementation(libs.networking.moshi)
