@@ -12,8 +12,6 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.adaptive.navigation.suite.ExperimentalMaterial3AdaptiveNavigationSuiteApi
-import androidx.compose.material3.adaptive.navigation.suite.NavigationSuiteDefaults
-import androidx.compose.material3.adaptive.navigation.suite.NavigationSuiteScaffold
 import androidx.compose.material3.surfaceColorAtElevation
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -35,6 +33,7 @@ import dev.pula.sofrito.presentation.destinations.Destination
 import dev.pula.sofrito.presentation.destinations.RecipesOverviewScreenDestination
 import dev.pula.sofrito.presentation.destinations.SettingsScreenDestination
 import dev.pula.sofrito.presentation.destinations.ShoppingListDestination
+import dev.pula.sofrito.presentation.navigation.suite.SofritoNavigationSuiteScaffold
 import dev.pula.sofrito.presentation.startAppDestination
 import dev.pula.sofrito.presentation.theme.AppThemePreview
 
@@ -48,8 +47,7 @@ fun NavigationMenu(
         ?: NavGraphs.root.startAppDestination
     val navItems = NavigationItem.entries.toTypedArray()
 
-    NavigationSuiteScaffold(
-        navigationSuiteColors = NavigationSuiteDefaults.colors(),
+    SofritoNavigationSuiteScaffold(
         navigationSuiteItems = {
             navItems.forEach { item ->
                 item(
@@ -83,7 +81,7 @@ enum class NavigationItem(
     SHOPPINGLIST(
         title = "Shopping",
         icon = FontAwesomeIcons.Solid.ShoppingCart,
-        direction = ShoppingListDestination
+            direction = ShoppingListDestination
     ),
     CALENDAR(
         title = "Calendar",

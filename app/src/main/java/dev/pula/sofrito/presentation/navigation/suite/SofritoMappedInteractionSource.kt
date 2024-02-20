@@ -1,4 +1,4 @@
-package dev.pula.sofrito.presentation.navigation.navigationrail
+package dev.pula.sofrito.presentation.navigation.suite
 
 import androidx.compose.foundation.interaction.InteractionSource
 import androidx.compose.foundation.interaction.PressInteraction

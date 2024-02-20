@@ -1,4 +1,4 @@
-package dev.pula.sofrito.presentation.navigation.navigationrail
+package dev.pula.sofrito.presentation.navigation.suite
 
 import androidx.compose.ui.unit.dp
 import dev.pula.sofrito.presentation.theme.designtokens.SofritoColorSchemeKeyTokens
